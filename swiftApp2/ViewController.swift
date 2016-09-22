@@ -16,17 +16,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var text2: UITextField!
     
-    var tapCount = 0
 
     @IBAction func button1Tapped(_ sender: AnyObject) {
-        
-        coolLabel.text = "Now Cooler!"
-        print("buttontapped")
-        
-        tapCount = tapCount+1
-        if tapCount >= 20 {
-            coolLabel.text = "You've tapped it more than 20 times."
-        } 
+      
+        coolLabel.text = String (Double (text1.text!)! * Double (text2.text!)!)
         
     }
     
