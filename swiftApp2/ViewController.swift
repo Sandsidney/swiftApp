@@ -20,7 +20,23 @@ class ViewController: UIViewController {
     @IBAction func button1Tapped(_ sender: AnyObject) {
       
         coolLabel.text = String (Double (text1.text!)! * Double (text2.text!)!)
-        
+    }
+    
+
+    @IBAction func addButton(_ sender: AnyObject) {
+        coolLabel.text = String (Double (text1.text!)! + Double (text2.text!)!)
+    }
+    
+    @IBAction func subButton(_ sender: AnyObject) {
+        coolLabel.text = String (Double (text1.text!)! - Double (text2.text!)!)
+    }
+    
+    @IBAction func multButton(_ sender: AnyObject) {
+        coolLabel.text = String (Double (text1.text!)! * Double (text2.text!)!)
+    }
+    
+    @IBAction func divButton(_ sender: AnyObject) {
+        coolLabel.text = String (Double (text1.text!)! / Double (text2.text!)!)
     }
     
     override func viewDidLoad() {
